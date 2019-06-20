@@ -1,0 +1,74 @@
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.error-content {
+  margin: 4rem auto 0 auto;
+  width: 1200px;
+  max-width: 95%;
+
+  p {
+    font-size: 2rem;
+    position: relative;
+    margin-bottom: 1rem;
+
+    &::before {
+      content: "404";
+      font-size: 15rem;
+      position: absolute;
+      top: 0;
+      font-weight: bold;
+      left: 0;
+      color: #d4d5d6;
+      z-index: -1;
+
+      @media(max-width:768px) {
+        font-size: 10rem;
+      }
+    }
+
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    margin-bottom: 5rem;
+  }
+
+  @media(max-width: 768px) {
+    p {
+      font-size: 1.5rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+
+}
+
+
+
+.go-home-btn {
+
+
+  button {
+    background: linear-gradient(to right, #000000, #434343);
+    padding: 1rem 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    outline: none;
+    cursor: pointer;
+  }
+
+  &:hover {
+    background: linear-gradient(to left, #000000, #434343);
+    box-shadow: 0 3px 7px solid rgba(0, 0, 0, .4);
+  }
+}

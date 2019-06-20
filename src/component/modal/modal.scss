@@ -1,0 +1,54 @@
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  widows: 100%;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 15000;
+}
+
+.modal {
+  width: 600px;
+  max-width: 80%;
+  margin: auto;
+
+  background: #fff;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &>div:not(:last-of-type) {
+    margin-bottom: 2rem;
+  }
+
+  &-heading {
+    font-size: 2rem;
+  }
+
+  &-img {
+    width: 200px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &-title {
+    font-size: 1.5rem;
+    margin: 0 !important;
+
+  }
+
+  &-price {
+    font-size: 1.5rem;
+
+  }
+}

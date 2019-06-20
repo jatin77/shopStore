@@ -1,0 +1,37 @@
+.empty-cart-head {
+  text-align: center;
+  margin: 5rem 0 6rem 0;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+
+}
+
+.cart-head-text {
+  position: relative;
+}
+
+.cart-count {
+  font-size: 15rem;
+  position: absolute;
+  top: -110px;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  left: 0;
+  color: #d4d5d6;
+  z-index: -1;
+  text-align: center;
+
+}
+
+@media(max-width:768px) {
+  .cart-count {
+    font-size: 10rem;
+    top: -60px;
+  }
+
+  .empty-cart-head {
+    margin: 4rem 0 5rem 0;
+  }
+}

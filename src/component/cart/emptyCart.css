@@ -1,0 +1,50 @@
+.empty-cart-title {
+  text-transform: uppercase;
+
+}
+
+.empty-content {
+  margin: 4rem auto 0 auto;
+  position: relative;
+}
+
+
+.empty-content p {
+  font-size: 2rem;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.empty-content h1 {
+  font-size: 3.5rem;
+
+  margin-bottom: 5rem;
+}
+
+@media (max-width:768px) {
+  .empty-content p {
+    font-size: 1.5rem;
+  }
+
+  .empty-content h1 {
+    font-size: 3rem;
+    margin-bottom: 5rem;
+  }
+
+
+  .empty-content p::before {
+    font-size: 10rem;
+  }
+}
+
+.empty-content p::before {
+  content: "\f218";
+  font-family: 'Font Awesome\ 5 Free';
+  font-size: 15rem;
+  position: absolute;
+  top: 0;
+  font-weight: bold;
+  left: 0;
+  color: #d4d5d6;
+  z-index: -1;
+}

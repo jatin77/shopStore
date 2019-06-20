@@ -1,0 +1,18 @@
+.cartHeader {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  margin-top: 3rem;
+
+}
+
+.cartHeader p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+@media (max-width:576px) {
+  .cartHeader p {
+    font-size: 1.2rem
+  }
+}
